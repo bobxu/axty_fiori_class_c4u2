@@ -1,0 +1,27 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog
+		confirm="onSetDone">
+		<sortItems>
+			<ViewSettingsItem text="Name" key="Name" selected="true" />
+			<ViewSettingsItem text="Description" key="Description" />
+			<ViewSettingsItem text="ReleaseDate" key="ReleaseDate" />
+		</sortItems>
+		<groupItems>
+			<ViewSettingsItem text="Name" key="Name" />
+		</groupItems>
+		<filterItems>
+			<ViewSettingsFilterItem
+				text="Name"
+				key="Name"
+				multiSelect="false">
+				<items>
+					<ViewSettingsItem text="Bread" key="Name___Contains___Bread___X" />
+					<ViewSettingsItem text="Milk" key="Name___Contains___Milk___X" />
+					<ViewSettingsItem text="Vint Soda" key="Name___Contains___Vint Soda___X" />
+				</items>
+			</ViewSettingsFilterItem>
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

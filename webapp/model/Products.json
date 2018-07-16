@@ -1,0 +1,58 @@
+{
+    "Products": [
+        {
+            "ID": 0,
+            "Name": "Bread",
+            "Description": "Whole grain bread",
+            "ReleaseDate": "2018/04/23",
+            "DiscontinuedDate": null,
+            "Rating": 4,
+            "Price": "2.5"
+        },
+        {
+            "ID": 1,
+            "Name": "Milk",
+            "Description": "Low fat milk",
+            "ReleaseDate": "2018/04/23",
+            "DiscontinuedDate": null,
+            "Rating": 3,
+            "Price": "3.5"
+        },
+        {
+            "ID": 2,
+            "Name": "Vint soda",
+            "Description": "Americana Variety - Mix of 6 flavors",
+            "ReleaseDate": "2018/04/23",
+            "DiscontinuedDate": null,
+            "Rating": 3,
+            "Price": "20.9"
+        },
+        {
+            "ID": 3,
+            "Name": "Bread",
+            "Description": "Whole grain bread 1",
+            "ReleaseDate": "2018/04/23",
+            "DiscontinuedDate": null,
+            "Rating": 4,
+            "Price": "2.5"
+        },
+        {
+            "ID": 4,
+            "Name": "Milk",
+            "Description": "Low fat milk 1",
+            "ReleaseDate": "2018/04/23",
+            "DiscontinuedDate": null,
+            "Rating": 3,
+            "Price": "3.5"
+        },
+        {
+            "ID": 5,
+            "Name": "Vint soda 1",
+            "Description": "Americana Variety - Mix of 6 flavors",
+            "ReleaseDate": "2018/04/23",
+            "DiscontinuedDate": null,
+            "Rating": 3,
+            "Price": "20.9"
+        }
+    ]
+}

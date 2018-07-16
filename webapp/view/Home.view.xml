@@ -1,0 +1,77 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.axyt.chapter4unit2.controller.Home" displayBlock="true">
+	<App id="idAppControl">
+		<pages><Page title="{i18n>title}">
+				<content>
+				    <List noDataText="Drop list items here" id="list0" 
+				    	growing="true"
+						growingThreshold="4"
+						growingScrollToLoad="false"
+						mode="Delete"
+						delete="handleDelete"
+				    	items="{
+							path: '/Products',
+							sorter: {
+								path: 'Name',
+								descending: false,
+								group: true
+							},
+							groupHeaderFactory: '.getGroupHeader'
+						}">
+				        <items>
+				            <StandardListItem type="Active" title="{Name}" description="{Description}" icon="sap-icon://picture" id="item0"/>
+				        </items>
+				    </List>
+				    <Table noDataText="Drop column list items here and columns in the area above" id="table0" items="{/Products}">
+				    	<headerToolbar>
+							<Toolbar>
+								<Title text="Products" level="H2"/>
+								<ToolbarSpacer/>
+								<Button tooltip="View Settings" icon="sap-icon://drop-down-list" press="onUpdateSortFilter" />
+							</Toolbar>
+						</headerToolbar>
+				        <items>
+				            <ColumnListItem type="Active" id="item1">
+				                <cells>
+				                    <Text text="{Name}" id="text3"/>
+				                    <Text text="{Description}" id="text4"/>
+				                    <Text text="{ReleaseDate}" 
+											id="text5"/>
+								</cells>
+				            </ColumnListItem>
+				        </items>
+				        <columns>
+				            <Column id="column0">
+				                <header>
+				                    <Label text="Name" id="label0"/>
+				                </header>
+				            </Column>
+				            <Column id="column1">
+				                <header>
+				                    <Label text="Description" id="label1"/>
+				                </header>
+				            </Column>
+				            <Column id="column2">
+				                <header>
+				                    <Label text="Release Date" id="label2"/>
+				                </header>
+				            </Column></columns>
+				    </Table>
+					<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="form0">
+				        <sap.ui.layout.form:content>
+				            <sap.ui.core:Title text="Form Demo" id="title0"/>
+				            <Label text="Name" id="label3"/>
+				            <Input width="100%" id="inputName"/>
+				            <Input width="100%" id="inputDescription"/>
+				            <Label text="Release Date" id="label4"/>
+				            <DatePicker
+								id="inputDate"
+								placeholder="Enter Date ..."
+								change="handleChange"
+								class="sapUiSmallMarginBottom"/>
+				            <Button text="添加" width="100px" id="button0" press="onAddNew"/></sap.ui.layout.form:content>
+				    </sap.ui.layout.form:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
